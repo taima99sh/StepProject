@@ -1,0 +1,40 @@
+PODS:
+  - BEMCheckBox (1.4.1)
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManagerSwift (6.5.0)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftMessages (9.0.5):
+    - SwiftMessages/App (= 9.0.5)
+  - SwiftMessages/App (9.0.5)
+
+DEPENDENCIES:
+  - BEMCheckBox
+  - DZNEmptyDataSet
+  - IQKeyboardManagerSwift (= 6.5.0)
+  - Kingfisher (= 5.13.2)
+  - SVProgressHUD
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - BEMCheckBox
+    - DZNEmptyDataSet
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - SVProgressHUD
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManagerSwift: 6cd19976c6e871907c4ed9127c2d3affdd4defc2
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftMessages: 9cca50659fa22bb523b4dd2a958d4442e843a354
+
+PODFILE CHECKSUM: ceb257de666ad5c721c2b992ffb0e805cb68352e
+
+COCOAPODS: 1.11.2
