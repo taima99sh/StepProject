@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SwiftMessages
+import MBProgressHUD
 
 func digitsCode(numOfDigits: Int) -> String {
     let arrletters = Array("0123456789")
@@ -23,8 +24,9 @@ extension UIViewController {
     
     
     
-    func showAlert(title: String, message: String,button1title: String = "ok", button2title: String = "cansel",button1style: UIAlertAction.Style = .default, button2style: UIAlertAction.Style = .default, button1action: @escaping (()->Void), button2action: @escaping (()->Void)) {
+    func showAlert(title: String, message: String,button1title: String = "تأكيد", button2title: String = "إلغاء",button1style: UIAlertAction.Style = .default, button2style: UIAlertAction.Style = .default, button1action: @escaping (()->Void), button2action: @escaping (()->Void)) {
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        alert.view.tintColor = "#248277".color_
         let button1 = UIAlertAction.init(title: button1title, style: button1style) { (action) in
             button1action()
         }
@@ -46,6 +48,7 @@ extension UIViewController {
     func SuccessMessage(title:String? , successbody:String?){
         let Successview = MessageView.viewFromNib(layout: .messageView)
         Successview.configureTheme(.success)
+        Successview.backgroundColor = "#248277".color_
         Successview.configureContent(title: title!, body: successbody!)
         Successview.button?.isHidden = true
         SwiftMessages.show(view: Successview)
@@ -99,8 +102,17 @@ extension UIViewController {
     @objc func reloadAction() {
         
     }
-    
-    
+    func showIndicator(withTitle title: String = "", and Description:String = "") {
+       let Indicator = MBProgressHUD.showAdded(to: self.view, animated: true)
+       Indicator.label.text = title
+       Indicator.isUserInteractionEnabled = false
+       Indicator.detailsLabel.text = Description
+        //Indicator.mode = MBProgressHUDMode.annularDeterminate
+       Indicator.show(animated: true)
+    }
+    func hideIndicator() {
+       MBProgressHUD.hide(for: self.view, animated: true)
+    }
 }
 
 extension Double {

@@ -6,13 +6,28 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+import LGSideMenuController
+
+extension UIStoryboard{
+   static let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+}
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
+    static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    var rootNavigationViewController: UINavigationController!
+    var rootViewController: LGSideMenuController!
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        IQKeyboardManager.shared.enable = true
         // Override point for customization after application launch.
         return true
     }

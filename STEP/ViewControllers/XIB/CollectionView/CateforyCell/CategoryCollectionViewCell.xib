@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="font_regular.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="STEP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="122" height="93"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrE-KR-v8X">
+                        <rect key="frame" x="0.0" y="0.0" width="122" height="93"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="evs-OV-dRv">
+                                <rect key="frame" x="0.0" y="0.0" width="122" height="93"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ezR-1a-xNu">
+                                        <rect key="frame" x="38" y="8" width="46" height="57"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التصميم الجرافيكي " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCv-VM-XVs">
+                                        <rect key="frame" x="12" y="65" width="98" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="mNr-Zp-bSr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="13"/>
+                                        <color key="textColor" name="ActionColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="evs-OV-dRv" secondAttribute="trailing" id="0ro-3u-Ur6"/>
+                            <constraint firstItem="evs-OV-dRv" firstAttribute="top" secondItem="XrE-KR-v8X" secondAttribute="top" id="1Fa-aG-h0B"/>
+                            <constraint firstItem="evs-OV-dRv" firstAttribute="leading" secondItem="XrE-KR-v8X" secondAttribute="leading" id="XRd-U0-hVw"/>
+                            <constraint firstAttribute="bottom" secondItem="evs-OV-dRv" secondAttribute="bottom" id="sxM-SO-iCq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="navBarColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="XrE-KR-v8X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A3e-qE-w6t"/>
+                <constraint firstAttribute="bottom" secondItem="XrE-KR-v8X" secondAttribute="bottom" id="AHy-SH-XRP"/>
+                <constraint firstAttribute="trailing" secondItem="XrE-KR-v8X" secondAttribute="trailing" id="MME-av-fl1"/>
+                <constraint firstItem="XrE-KR-v8X" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v6I-rD-U5N"/>
+            </constraints>
+            <size key="customSize" width="122" height="93"/>
+            <connections>
+                <outlet property="imgView" destination="ezR-1a-xNu" id="b4H-ZA-GgW"/>
+                <outlet property="lblName" destination="rCv-VM-XVs" id="i9F-Dw-qRO"/>
+                <outlet property="viewBackground" destination="XrE-KR-v8X" id="5ji-5h-1sa"/>
+            </connections>
+            <point key="canvasLocation" x="85.507246376811594" y="67.96875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="design-icon" width="46" height="35.5"/>
+        <namedColor name="ActionColor">
+            <color red="0.14117647058823529" green="0.50980392156862742" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navBarColor">
+            <color red="0.47058823529411764" green="0.77647058823529413" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

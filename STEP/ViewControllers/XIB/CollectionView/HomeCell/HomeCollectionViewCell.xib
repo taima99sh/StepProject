@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="font_regular.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="STEP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="258" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UV3-ex-EJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="258" height="226"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4CX-7p-sgq">
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="226"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="9lw-KB-qQZ">
+                                        <rect key="frame" x="8" y="8" width="242" height="137.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التخطيط الاستراتيجي للأهداف" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="r8M-yd-oqD">
+                                        <rect key="frame" x="8" y="150.5" width="242" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="10"/>
+                                        <color key="textColor" name="ActionColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جامعة فلسطين" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c8q-dp-HRE">
+                                        <rect key="frame" x="8" y="183" width="242" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Qwh-9r-5OV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="10"/>
+                                        <color key="textColor" name="ActionColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o8k-Dl-4vA">
+                                        <rect key="frame" x="8" y="203" width="242" height="15"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.badge.clock.rtl" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XHZ-Cn-ftS">
+                                                <rect key="frame" x="-1.5" y="1.5" width="16.5" height="14"/>
+                                                <color key="tintColor" name="ActionColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XHZ-Cn-ftS" secondAttribute="height" multiplier="1:1" id="6XY-eT-BUz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15Oct. 2021" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jpb-UX-aYD">
+                                                <rect key="frame" x="20" y="0.0" width="222" height="15"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="10"/>
+                                                <color key="textColor" name="ActionColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="9oG-ea-B3E"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="r8M-yd-oqD" firstAttribute="height" secondItem="9lw-KB-qQZ" secondAttribute="height" multiplier="0.2" id="tsh-Pm-JaZ"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4CX-7p-sgq" secondAttribute="bottom" id="9bQ-DH-Rqm"/>
+                            <constraint firstItem="4CX-7p-sgq" firstAttribute="leading" secondItem="UV3-ex-EJ8" secondAttribute="leading" id="U8G-rK-g9X"/>
+                            <constraint firstItem="4CX-7p-sgq" firstAttribute="top" secondItem="UV3-ex-EJ8" secondAttribute="top" id="otE-HC-mZ7"/>
+                            <constraint firstAttribute="trailing" secondItem="4CX-7p-sgq" secondAttribute="trailing" id="qnH-g0-l4o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="UV3-ex-EJ8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G7p-rn-zDw"/>
+                <constraint firstItem="UV3-ex-EJ8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pNo-2l-xnn"/>
+                <constraint firstAttribute="trailing" secondItem="UV3-ex-EJ8" secondAttribute="trailing" id="yCY-vC-IRI"/>
+                <constraint firstAttribute="bottom" secondItem="UV3-ex-EJ8" secondAttribute="bottom" id="zjj-Ou-ZuK"/>
+            </constraints>
+            <size key="customSize" width="258" height="226"/>
+            <connections>
+                <outlet property="imgView" destination="9lw-KB-qQZ" id="XE1-Vh-dCg"/>
+                <outlet property="lblDate" destination="Jpb-UX-aYD" id="7Zs-yC-hun"/>
+                <outlet property="lblName" destination="r8M-yd-oqD" id="kdJ-QW-nIg"/>
+                <outlet property="lblOwner" destination="c8q-dp-HRE" id="w3G-Z5-CsA"/>
+            </connections>
+            <point key="canvasLocation" x="318.84057971014494" y="167.41071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="3" width="4392" height="2863"/>
+        <image name="calendar.badge.clock.rtl" catalog="system" width="128" height="108"/>
+        <namedColor name="ActionColor">
+            <color red="0.14117647058823529" green="0.50980392156862742" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
