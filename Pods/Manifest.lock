@@ -1,40 +1,97 @@
 PODS:
   - BEMCheckBox (1.4.1)
+  - Cosmos (22.1.0)
+  - DropDown (2.3.13)
   - DZNEmptyDataSet (1.8.1)
+  - FSCalendar (2.8.2)
+  - FSPagerView (0.8.2)
   - IQKeyboardManagerSwift (6.5.0)
   - Kingfisher (5.13.2):
     - Kingfisher/Core (= 5.13.2)
   - Kingfisher/Core (5.13.2)
+  - LGSideMenuController (2.1.1)
+  - MBProgressHUD (1.2.0)
+  - PryntTrimmerView (4.0.2)
+  - SCLAlertView (0.8)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SteviaLayout (4.6.1)
   - SVProgressHUD (2.2.5)
   - SwiftMessages (9.0.5):
     - SwiftMessages/App (= 9.0.5)
   - SwiftMessages/App (9.0.5)
+  - SwiftyJSON (5.0.0)
+  - TTRangeSlider (1.0.7)
+  - XLPagerTabStrip (9.0.0)
+  - YPImagePicker (4.1.2):
+    - PryntTrimmerView (~> 4.0.0)
+    - SteviaLayout (~> 4.6.0)
 
 DEPENDENCIES:
   - BEMCheckBox
+  - Cosmos (= 22.1.0)
+  - DropDown
   - DZNEmptyDataSet
-  - IQKeyboardManagerSwift (= 6.5.0)
+  - FSCalendar
+  - FSPagerView
+  - FSPagerView (= 0.8.2)
+  - IQKeyboardManagerSwift
   - Kingfisher (= 5.13.2)
+  - LGSideMenuController (= 2.1.1)
+  - MBProgressHUD
+  - SCLAlertView
+  - SkyFloatingLabelTextField (= 3.8.0)
   - SVProgressHUD
   - SwiftMessages
+  - SwiftyJSON (= 5.0.0)
+  - TTRangeSlider
+  - XLPagerTabStrip (= 9.0.0)
+  - YPImagePicker (= 4.1.2)
 
 SPEC REPOS:
   trunk:
     - BEMCheckBox
+    - Cosmos
+    - DropDown
     - DZNEmptyDataSet
+    - FSCalendar
+    - FSPagerView
     - IQKeyboardManagerSwift
     - Kingfisher
+    - LGSideMenuController
+    - MBProgressHUD
+    - PryntTrimmerView
+    - SCLAlertView
+    - SkyFloatingLabelTextField
+    - SteviaLayout
     - SVProgressHUD
     - SwiftMessages
+    - SwiftyJSON
+    - TTRangeSlider
+    - XLPagerTabStrip
+    - YPImagePicker
 
 SPEC CHECKSUMS:
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
   IQKeyboardManagerSwift: 6cd19976c6e871907c4ed9127c2d3affdd4defc2
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SteviaLayout: 0c83442390c8a369c21f975ffbd812d11532645b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftMessages: 9cca50659fa22bb523b4dd2a958d4442e843a354
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TTRangeSlider: 8cf72eca457c3b700c92eb0074be908c986e25ec
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+  YPImagePicker: bdaa46782668e260fdd9709f19043a9f469fd2ad
 
-PODFILE CHECKSUM: ceb257de666ad5c721c2b992ffb0e805cb68352e
+PODFILE CHECKSUM: dff57f2ea955d45f5713a7464825c04378d18714
 
 COCOAPODS: 1.11.2
