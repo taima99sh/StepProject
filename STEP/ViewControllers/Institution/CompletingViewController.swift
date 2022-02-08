@@ -22,6 +22,9 @@ class CompletingViewController: UIViewController {
     
     
     @IBAction func btnBackToHome(_ sender: Any) {
+        let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "LGSideViewController") as! LGSideViewController
+        AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
 

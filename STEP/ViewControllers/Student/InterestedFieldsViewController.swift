@@ -48,7 +48,10 @@ class InterestedFieldsViewController: UIViewController {
         self.showIndicator()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.hideIndicator()
+            UserProfile.shared.userID = 1
             self.SuccessMessage(title: "", successbody: "تم تسجيل الدخول بنجاح")
+            let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "LGSideViewController") as! LGSideViewController
+            AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
         }
     }
     

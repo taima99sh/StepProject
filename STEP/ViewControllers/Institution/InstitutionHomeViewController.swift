@@ -21,7 +21,7 @@ class InstitutionHomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.greenView.isHidden = true
+        self.greenView.isHidden = false
         AppDelegate.shared.rootViewController.navigationItem.title = "الرئيسية"
     }
     
@@ -37,7 +37,7 @@ extension InstitutionHomeViewController {
     func setupView(){
         calendar = FSCalendar(frame: CGRect(x: 0.0, y: 100, width: self.view.frame.size.width - 40, height: 300))
         calendar.center.x = self.view.center.x
-        calendar.scrollDirection = .vertical
+        //calendar.scrollDirection = .vertical
         calendar.scope = .week
         calendar.appearance.todaySelectionColor = "#248277".color_
         calendar.appearance.todayColor = "#248277".color_

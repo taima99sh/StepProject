@@ -131,6 +131,12 @@ class AddEventViewController: UIViewController {
     }
     
     @IBAction func btnPublish(_ sender: Any) {
+        self.showIndicator()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.hideIndicator()
+            let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "CompletingViewController") as! CompletingViewController
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     @IBAction func btnOffline(_ sender: Any) {

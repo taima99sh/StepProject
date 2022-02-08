@@ -38,6 +38,8 @@ class MenuViewController: UIViewController {
     @IBAction func btnLogOut(_ sender: Any) {
         self.showAlert(title: "", message: "هل تريد تسجيل الخروج؟") {
             print("تسجيل الخروج")
+            let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
         } button2action: {
             print("إلغاء")
         }

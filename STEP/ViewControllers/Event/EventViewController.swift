@@ -44,7 +44,8 @@ class EventViewController: UIViewController {
 
 extension EventViewController {
     func setupView(){
-        self.btnEdit.isHidden = true 
+        self.btnEdit.isHidden = false
+        self.lblIsAvailable.isHidden = true
     }
     func localized(){}
     func setupData(){}

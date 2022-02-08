@@ -6,7 +6,8 @@ class ReviewsViewController: UIViewController {
     
     @IBOutlet weak var tableView: GeneralTableView!
     
-
+    @IBOutlet weak var btnAddReview: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -18,6 +19,7 @@ class ReviewsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.btnAddReview.isHidden = true
     }
     
 

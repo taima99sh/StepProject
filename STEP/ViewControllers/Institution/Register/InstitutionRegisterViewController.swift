@@ -51,9 +51,11 @@ class InstitutionRegisterViewController: UIViewController {
         self.showIndicator()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.hideIndicator()
-            self.SuccessMessage(title: "", successbody: "تم تسجيل الدخول بنجاح")
+            UserProfile.shared.userID = 1
+            self.SuccessMessage(title: "", successbody: "تم إنشاء الحساب بنجاح")
+            let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "LGSideViewController") as! LGSideViewController
+            AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
         }
-
     }
     
     func setupCategoryDropDown() {
